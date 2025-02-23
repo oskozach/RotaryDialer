@@ -13,6 +13,6 @@ void setup() {
 
 void loop() {
     static uint8_t dialedDigit = 0;
-    if(dialer.handleDialInput(&dialedDigit))
+    if(dialer.getDigit(&dialedDigit))
         Serial.println(dialedDigit);
 }
