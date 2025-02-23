@@ -1,0 +1,11 @@
+# Class name
+RotaryDialer    KEYWORD1
+
+# Methods
+init    KEYWORD2
+handleDialInput KEYWORD2
+isArmed KEYWORD2
+
+# Constants
+ROTARY_DIALER_DEFAULT_PIN_PULSE KEYWORD3
+ROTARY_DIALER_DEFAULT_PIN_ARMED KEYWORD3
