@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-    static uint8_t dialedDigit = 0;
-    if(dialer.getDigit(&dialedDigit))
-        Serial.println(dialedDigit);
+    uint8_t digit;
+    if(dialer.getDigit(digit))
+        Serial.println(digit);
 }

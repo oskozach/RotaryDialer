@@ -15,15 +15,15 @@ void RotaryDialer::init() {
     _pulseInput.begin();
 }
 
-bool RotaryDialer::getDigit(uint8_t *digit) {
+bool RotaryDialer::getDigit(uint8_t &digit) {
     if(_armedInput.changed()) {
         bool valid = _isValidPulse();
         if(valid)
-            *digit = _convertPulseToDigit();
+            digit = _convertPulseToDigit();
         _pulseCount = 0;
         return valid;
     }
-    if(RotaryDialer::isArmed() && _pulseInput.changed())
+    if(_armedInput.getState() && _pulseInput.changed())
         _pulseCount++;
     return false;
 }

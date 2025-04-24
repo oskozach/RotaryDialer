@@ -16,7 +16,7 @@ class RotaryDialer {
         RotaryDialer(uint8_t pinArmed = ROTARY_DIALER_DEFAULT_PIN_ARMED, 
                     uint8_t pinPulse = ROTARY_DIALER_DEFAULT_PIN_PULSE);
         void init();
-        bool getDigit(uint8_t *digit);
+        bool getDigit(uint8_t &digit);
         bool isArmed();
 };
 #endif
