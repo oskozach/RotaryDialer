@@ -4,5 +4,5 @@ The `RotaryDialer` library allows you to interface an Arduino with a telephone r
 
 ## Wiring
 
-- **Armed Pin:** Connects to the armed signal of the rotary dial, with a 220Ω pull-down resistor (**Default:** Pin 3).
+- **Dial In Progress Pin:** Connects to the dial in progress signal of the rotary dial, with a 220Ω pull-down resistor (**Default:** Pin 3).
 - **Pulse Pin:** Connects to the pulse signal of the rotary dial, with a 220Ω pull-down resistor (**Default:** Pin 2).

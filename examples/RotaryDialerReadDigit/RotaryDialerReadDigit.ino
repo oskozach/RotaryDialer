@@ -1,9 +1,9 @@
 #include <RotaryDialer.h>
 
 #define PIN_PULSE 2 //default
-#define PIN_ARMED 3 //default
+#define PIN_DIAL_IN_PROGRESS 3 //default
 
-RotaryDialer dialer(PIN_ARMED, PIN_PULSE);
+RotaryDialer dialer(PIN_DIAL_IN_PROGRESS, PIN_PULSE);
 
 void setup() {
     Serial.begin(9600);
