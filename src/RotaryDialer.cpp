@@ -1,7 +1,7 @@
 #include "RotaryDialer.h"
 
-RotaryDialer::RotaryDialer(uint8_t dialInProgress, uint8_t pinPulse) 
-                            : _dialInProgressInput(dialInProgress, FALLING),
+RotaryDialer::RotaryDialer(uint8_t pinDialInProgress, uint8_t pinPulse) 
+                            : _dialInProgressInput(pinDialInProgress, FALLING),
                                 _pulseInput(pinPulse, FALLING, true),
                                 _pulseCount(0) {}
 

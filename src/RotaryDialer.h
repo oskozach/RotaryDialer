@@ -13,7 +13,7 @@ class RotaryDialer {
         uint8_t _convertPulseToDigit();
         bool _isValidPulse();
     public:
-        RotaryDialer(uint8_t dialInProgress = ROTARY_DIALER_DEFAULT_PIN_DIAL_IN_PROGRESS, 
+        RotaryDialer(uint8_t pinDialInProgress = ROTARY_DIALER_DEFAULT_PIN_DIAL_IN_PROGRESS, 
                         uint8_t pinPulse = ROTARY_DIALER_DEFAULT_PIN_PULSE);
         void init();
         bool getDigit(uint8_t &digit);
